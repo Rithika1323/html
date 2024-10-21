@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #0056b3;
+            margin-bottom: 20px;
+            font-size: 36px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #333;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            input[type="text"], input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form action="success.html">
+        <h1>Enroll Now</h1>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="username" placeholder="Enter name" required>
+        
+        <label for="Qualification">Qualification</label>
+        <input id="Qualification" type="text" name="Qualification" placeholder="Enter qualification" required>
+        <label for="phone number">Contact Number</label>
+        <input id="phone number" type="text" name="phone mumber" placeholder="Enter contact number" required>
+        
+        <label for="email">Email</label>
+        <input id="email" type="text" name="email" placeholder="Enter email" required>
+        
+        <label for="Place">Place</label>
+        <input id="Place" type="text" name="place" placeholder="Enter place" required>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

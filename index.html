@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Styling the body with your background image */
+        body {
+            background-image: url('https://tse3.mm.bing.net/th?id=OIP.-VirwnUgLW8TfBtY4DLPpwHaHa&pid=Api&P=0&h=180'); /* Your original background image */
+            background-size: cover; /* Cover the entire page */
+            background-position: center; /* Center the image */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Styling the form */
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s; /* Transition for hover effect */
+        }
+
+        form:hover {
+            transform: scale(1.02); /* Slight scaling on hover */
+        }
+
+        /* Styling the labels */
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            display: block;
+            text-align: left;
+        }
+
+        /* Styling the input fields */
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s; /* Smooth border transition */
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            border-color: #4CAF50; /* Green border on focus */
+        }
+
+        /* Styling the submit button */
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s; /* Smooth background transition */
+        }
+
+        /* Button hover effect */
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        /* Media query for mobile responsiveness */
+        @media (max-width: 600px) {
+            form {
+                width: 90%; /* Adjust form width for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="quntnex.html">
+        <label for="name">Username</label>
+        <input id="name" type="text" name="username" placeholder="Enter username" required>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" placeholder="Enter password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
